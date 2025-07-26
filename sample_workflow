@@ -10,7 +10,7 @@ jobs:
   vulnerability-scan:
     permissions:
       contents: read
-    uses: SecureIQx-Dev/threatrank_binary_analyzer_on_prem_workflow/.github/workflows/binary-analyzer.yml@main # Replace this with the link to the workflow you have setup 
+    uses: SecureIQx-Dev/threatrank_binary_analyzer_on_prem_workflow/.github/workflows/binary-analyzer.yml@main # CRITICAL: Replace this with the link to the private workflow you have setup 
     with:
       binary_path: "sample.bin"  # Path of the binary to scan
       cvss_lower_bound: "HIGH"  # Options: LOW, MEDIUM, HIGH, CRITICAL
